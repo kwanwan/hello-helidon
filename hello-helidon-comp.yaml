@@ -21,6 +21,7 @@ spec:
           containers:
             - name: hello-helidon-container
               image: "lhr.ocir.io/lrv4zdykjqrj/quickstart-mp-cicd:1.2"
+              imagePullPolicy: Always
               ports:
                 - containerPort: 8080
                   name: http
