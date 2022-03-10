@@ -20,7 +20,7 @@ spec:
         podSpec:
           containers:
             - name: hello-helidon-container
-              image: "lhr.ocir.io/lrv4zdykjqrj/quickstart-mp-cicd:1.0"
+              image: "lhr.ocir.io/lrv4zdykjqrj/quickstart-mp-sid:1.0"
               ports:
                 - containerPort: 8080
                   name: http
