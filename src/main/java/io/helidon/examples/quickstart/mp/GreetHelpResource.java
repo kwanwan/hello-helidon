@@ -1,4 +1,4 @@
-package mp.quickstart;
+package io.helidon.examples.quickstart.mp;
 
 import java.util.Arrays;
 import java.util.List;
