@@ -21,6 +21,6 @@ public class GreetHelpResource {
     @Counted(name = "helpCalled", description = "How many time help was called")
     public String getAllGreetings(){
         LOGGER.info("Help requested!");
-        return Arrays.toString(List.of("Hello and Welcome DevOps Demo for Partner Forum","Привет","Hola","Hallo","Ciao","Nǐ hǎo", "Marhaba","Olá").toArray());
+        return Arrays.toString(List.of("Hello and Welcome DevOps Demo ","Привет","Hola","Hallo","Ciao","Nǐ hǎo", "Marhaba","Olá").toArray());
     }
 }
