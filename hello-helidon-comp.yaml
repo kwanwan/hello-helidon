@@ -27,4 +27,4 @@ spec:
                   name: http
       placement:
         clusters:
-          - name: local
+          - name: managed1
