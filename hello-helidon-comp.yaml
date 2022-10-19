@@ -21,7 +21,7 @@ spec:
         podSpec:
           containers:
             - name: hello-helidon-container
-              image: "iad.ocir.io/apaccpt01/kwan/quickstart-mp-cicd:latest"
+              image: "lhr.ocir.io/lrv4zdykjqrj/quickstart-mp-cicd:029f7b7"
               imagePullPolicy: Always
               ports:
                 - containerPort: 8080
