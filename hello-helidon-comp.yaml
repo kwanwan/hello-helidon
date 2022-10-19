@@ -22,6 +22,7 @@ spec:
           containers:
             - name: hello-helidon-container
               image: "iad.ocir.io/apaccpt01/kwan/quickstart-mp-cicd:latest"
+              imagePullPolicy: Always
               ports:
                 - containerPort: 8080
                   name: http
