@@ -1,4 +1,4 @@
-# Copyright (c) 2020, 2021, Oracle and/or its affiliates.
+# Copyright (c) 2021, 2022, Oracle and/or its affiliates.
 # Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
 apiVersion: core.oam.dev/v1alpha2
 kind: Component
@@ -13,6 +13,7 @@ spec:
       name: hello-helidon-workload
       labels:
         app: hello-helidon
+        version: v1
     spec:
       deploymentTemplate:
         metadata:
@@ -20,8 +21,10 @@ spec:
         podSpec:
           containers:
             - name: hello-helidon-container
-              image: "lhr.ocir.io/lrv4zdykjqrj/quickstart-mp-cicd:IMAGEVERSION"
-              imagePullPolicy: Always
+              image: "ghcr.io/verrazzano/example-helidon-greet-app-v1:1.0.0-1-20211215184123-0a1b633"
               ports:
                 - containerPort: 8080
                   name: http
+      placement:
+        clusters:
+          - name: local
