@@ -32,4 +32,4 @@ spec:
                           pathType: Prefix
   placement:
     clusters:
-      - name: local
+      - name: managed1
