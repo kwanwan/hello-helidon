@@ -68,7 +68,7 @@ public class GreetResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public JsonObject getDefaultMessage() {
-        return createResponse("Kwan's Cloud World");
+        return createResponse("Hello Cloud World");
     }
 
     /**
